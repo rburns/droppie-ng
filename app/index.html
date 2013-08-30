@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="drop">
+	<head>
+
+		<meta charset=utf-8>
+		<title>Notes</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="/css/app.css?v=##TIMESTAMP##">
+
+	</head>
+	<body class="" ng-controller="rootCtrl">
+
+		<input type="file" class="btn btn-upload-file" value="Upload a file"
+		ng-model="filename"
+		rb-file-change="uploadFile($event)"/>
+
+		<div ng-view></div>
+
+		<script src="/js/app.js?v=##TIMESTAMP##"></script>
+
+	</body>
+</html>
